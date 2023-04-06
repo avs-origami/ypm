@@ -1,0 +1,18 @@
+
++================================+
+| YPM: the Yocto Package Manager |
++================================+
+
+Usage: ypm [OPTIONS] [ARGUMENTS]
+  
+Options:
+  -c => Clear the package cache
+  -d => Download a package source
+  -e => Exit on fail
+  -g => Generate a package template
+  -h => Show this help
+  -i => Install a package
+  -o => Set offline mode
+  -r => Remove a package
+
+See man ypm(8) for more information.

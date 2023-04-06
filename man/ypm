@@ -1,0 +1,75 @@
+.\" Manpage for ypm, the Yocto Package Manager.
+
+.TH man 8 "13 February 2023" "0.1.0" "YPM MANUAL"
+
+.SH NAME
+ypm \- yocto package manager
+
+.SH SYNOPSIS
+ypm [OPTIONS] [ARGUMENTS]
+
+.SH DESCRIPTION
+ypm is a simple symlink-style package manager written in Rust. It features dependency support and a utility to easily generate your own packages. Packages are installed from a local repository located by default in /etc/ypm/repo/ and they are installed by default to /etc/ypm/pkg/.
+
+.SH OPTIONS
+\-c \- Clear the package cache (which is located by default at /etc/ypm/cache/).
+
+\-d \- Download the source files for a package.
+
+\-e \- Exit as soon as a package fails. This is useful if packages need to be installed in a particular dependency order.
+
+\-g \- Generate a package and add it to the local repository.
+
+\-h \- Print help to stdout.
+
+\-i \- Install a package.
+
+\-o \- Offline mode. This means ypm will not attempt to download any files from the internet, but it will still expect all the necessary files to be present in the cache directory. It’s not useful at the moment since the install command will not download files that already exist in the cache directory, and so it may be removed in future.
+
+\-r \- Remove a package.
+
+.SH EXAMPLES
+Installing Nano: ypm \-i nano
+
+Uninstalling cURL and Rust, installing cURL, and installing Rust only if cURL installs successfully: ypm \-rei curl rust
+
+.SH PACKAGE GENERATOR
+The package generator, which can be invoked using the -g option, is a utility that allows you to easily create and add a package to your local repositories.
+
+USAGE: ypm -g [name] [version] [repo] [source] [no_source] [has_install] [deps] [mkdeps] [extras]
+
+name: package name
+
+ver: package version
+
+repo: repository (core or extra)
+
+source: URL of source file
+
+no_source: set this to true if there are no source files to be downloaded
+
+has_install: whether the package has an install script in addition to the build script
+
+deps: comma separated list of dependencies (use "" if none)
+
+mkdeps: comma separated list of make dependencies (use "" if none)
+
+extras: URLs of anything else needed by the package installation (comma separated, use "" if none)
+
+.SH ENVIRONMENT VARIABLES
+Setting $YPM_ROOT will change the directory where ypm will look for the cache, pkg, and repo directories. These folders should be located in $YPM_ROOT/cache, $YPM_ROOT/pkg, and $YPM_ROOT/repo, respectively.
+
+Setting the $EDITOR variable will launch that program instead of vim when using the package generator. (e.g. export EDITOR=nvim to use neovim)
+
+.SH EXIT CODES
+1: Argument error
+
+2: Operation cancelled
+
+101: Panic
+
+.SH BUGS
+This program is still experimental, and so it is likely to have bugs. Bugs can be reported by opening an issue on the GitHub page (https://github.com/AVS-Origami/yocto).
+
+.SH AUTHOR
+AVS Origami (https://github.com/AVS-Origami/)
