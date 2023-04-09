@@ -1,0 +1,11 @@
+(
+	name: "shadow",
+	version: "4.12.2",
+	repo: "core",
+	source: "https://github.com/shadow-maint/shadow/releases/download/4.12.2/shadow-4.12.2.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

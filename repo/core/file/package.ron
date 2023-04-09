@@ -1,0 +1,11 @@
+(
+	name: "file",
+	version: "5.42",
+	repo: "core",
+	source: "https://astron.com/pub/file/file-5.42.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

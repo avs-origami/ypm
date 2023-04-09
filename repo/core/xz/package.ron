@@ -1,0 +1,11 @@
+(
+	name: "xz",
+	version: "5.2.6",
+	repo: "core",
+	source: "https://tukaani.org/xz/xz-5.2.6.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

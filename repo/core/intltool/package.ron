@@ -1,0 +1,11 @@
+(
+	name: "intltool",
+	version: "0.51.0",
+	repo: "core",
+	source: "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

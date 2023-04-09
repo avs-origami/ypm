@@ -1,0 +1,16 @@
+(
+	name: "ypm",
+	version: "0.1.0",
+	repo: "core",
+	source: "https://github.com/AVS-Origami/yocto/blob/main/ypm/releases/ypm-0.1.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [
+		"wget",
+		"findutils",
+	],
+	mkdeps: [
+		"rust",
+	],
+	extras: [],
+)

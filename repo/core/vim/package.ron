@@ -1,0 +1,11 @@
+(
+	name: "vim",
+	version: "9.0.0228",
+	repo: "core",
+	source: "https://anduin.linuxfromscratch.org/LFS/vim-9.0.0228.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

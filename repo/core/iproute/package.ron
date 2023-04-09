@@ -1,0 +1,11 @@
+(
+	name: "iproute",
+	version: "5.19.0",
+	repo: "core",
+	source: "https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-5.19.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

@@ -1,0 +1,11 @@
+(
+	name: "bc",
+	version: "6.0.1",
+	repo: "core",
+	source: "https://github.com/gavinhoward/bc/releases/download/6.0.1/bc-6.0.1.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

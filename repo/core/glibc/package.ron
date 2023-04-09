@@ -1,0 +1,14 @@
+(
+    name: "glibc",
+    version: "2.36",
+    repo: "core",
+    source: "https://ftp.gnu.org/gnu/glibc/glibc-2.36.tar.xz",
+    is_group: false,
+    no_source: false,
+    deps: [],
+    mkdeps: [],
+    extras: [
+        "https://www.linuxfromscratch.org/patches/lfs/11.2/glibc-2.36-fhs-1.patch",
+        "https://www.iana.org/time-zones/repository/releases/tzdata2022c.tar.gz",
+    ],
+)

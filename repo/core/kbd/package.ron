@@ -1,0 +1,13 @@
+(
+	name: "kbd",
+	version: "2.5.1",
+	repo: "core",
+	source: "https://www.kernel.org/pub/linux/utils/kbd/kbd-2.5.1.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [
+		"https://www.linuxfromscratch.org/patches/lfs/11.2/kbd-2.5.1-backspace-1.patch",
+	],
+)

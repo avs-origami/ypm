@@ -1,0 +1,17 @@
+(
+	name: "binutils",
+	version: "2.39",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/binutils/binutils-2.39.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [
+		"zlib",
+	],
+	mkdeps: [
+		"tcl",
+		"expect",
+		"dejagnu",
+	],
+	extras: [],
+)

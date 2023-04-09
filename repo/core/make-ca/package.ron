@@ -1,0 +1,13 @@
+(
+	name: "make-ca",
+	version: "1.10",
+	repo: "core",
+	source: "https://github.com/lfs-book/make-ca/releases/download/v1.10/make-ca-1.10.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [
+		"p11-kit",
+	],
+	mkdeps: [],
+	extras: [],
+)

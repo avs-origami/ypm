@@ -1,0 +1,11 @@
+(
+	name: "libpipeline",
+	version: "1.5.6",
+	repo: "core",
+	source: "https://download.savannah.gnu.org/releases/libpipeline/libpipeline-1.5.6.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

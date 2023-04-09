@@ -1,0 +1,11 @@
+(
+	name: "procps-ng",
+	version: "4.0.0",
+	repo: "core",
+	source: "https://sourceforge.net/projects/procps-ng/files/Production/procps-ng-4.0.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

@@ -1,0 +1,11 @@
+(
+	name: "libcap",
+	version: "2.65",
+	repo: "core",
+	source: "https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-2.65.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

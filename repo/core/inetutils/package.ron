@@ -1,0 +1,11 @@
+(
+	name: "inetutils",
+	version: "2.3",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/inetutils/inetutils-2.3.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

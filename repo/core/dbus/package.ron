@@ -1,0 +1,11 @@
+(
+	name: "dbus",
+	version: "1.14.0",
+	repo: "core",
+	source: "https://dbus.freedesktop.org/releases/dbus/dbus-1.14.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

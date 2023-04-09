@@ -1,0 +1,11 @@
+(
+	name: "wheel",
+	version: "0.37.1",
+	repo: "core",
+	source: "https://anduin.linuxfromscratch.org/LFS/wheel-0.37.1.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

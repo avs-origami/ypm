@@ -1,0 +1,17 @@
+(
+	name: "rust",
+	version: "1.66",
+	repo: "extra",
+	source: "",
+	is_group: false,
+	no_source: true,
+	deps: [
+		"curl",
+		"gcc",
+		"glibc",
+	],
+	mkdeps: [
+		"curl",
+	],
+	extras: [],
+)

@@ -1,0 +1,11 @@
+(
+	name: "check",
+	version: "0.15.2",
+	repo: "core",
+	source: "https://github.com/libcheck/check/releases/download/0.15.2/check-0.15.2.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

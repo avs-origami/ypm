@@ -1,0 +1,11 @@
+(
+	name: "autoconf",
+	version: "2.71",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/autoconf/autoconf-2.71.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

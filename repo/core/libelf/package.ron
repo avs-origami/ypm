@@ -1,0 +1,11 @@
+(
+	name: "libelf",
+	version: "0.187",
+	repo: "core",
+	source: "https://sourceware.org/ftp/elfutils/0.187/elfutils-0.187.tar.bz2",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

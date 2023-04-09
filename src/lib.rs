@@ -2,6 +2,8 @@ use std::{env, fs, path::Path, process::{self, Command, ExitStatus}, os::unix::p
 
 mod user;
 
+const VERSION: &str = "v0.0.1";
+
 const PKG_DIR: &str = "pkg";
 const DL_CACHE: &str = "cache";
 const REPO_DIR: &str = "repo";
@@ -66,6 +68,11 @@ pub fn print_help() {
         eprintln!("Couldn't locate helpfile. It may have been moved or deleted.")
     }
     
+}
+
+/// Print version information.
+pub fn print_version() {
+    println!("Yeti Package Manager {}", VERSION);
 }
 
 /// Generate a package template from the command line.
@@ -230,6 +237,14 @@ pub fn install_package(package: &YpmPkg) -> ExitStatus{
 
     if ! install_status.success() {
         return install_status;
+    }
+
+    fs::write("ypm_strip.sh", user::gen_strip_script(&pkg_install_dir)).expect("Failed to create temporary strip script");
+    let strip_status = Command::new("bash").arg("ypm_strip.sh").status().expect("Failed to strip binaries.");
+    fs::remove_file("ypm_strip.sh").expect("Failed to remove temporary strip script.");
+
+    if ! strip_status.success() {
+        eprintln!("Failed to strip binaries. Your files may be bigger than expected.");
     }
 
     fs::write("ypm_symlink.sh", format!("cp -sRf {}/* /", &pkg_install_dir)).expect("Failed to create temporary symlink script.");

@@ -1,0 +1,13 @@
+(
+	name: "zstd",
+	version: "1.5.2",
+	repo: "core",
+	source: "https://github.com/facebook/zstd/releases/download/v1.5.2/zstd-1.5.2.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [
+		"https://www.linuxfromscratch.org/patches/lfs/11.2/zstd-1.5.2-upstream_fixes-1.patch",
+	],
+)

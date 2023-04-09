@@ -1,0 +1,11 @@
+(
+	name: "man-db",
+	version: "2.10.2",
+	repo: "core",
+	source: "https://download.savannah.gnu.org/releases/man-db/man-db-2.10.2.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

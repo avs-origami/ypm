@@ -1,0 +1,13 @@
+(
+	name: "kernel",
+	version: "5.19.2",
+	repo: "core",
+	source: "https://www.kernel.org/pub/linux/kernel/v5.x/linux-5.19.2.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [
+		"https://github.com/AVS-Origami/yocto/blob/main/repo/core/busybox/busybox-1.36.0.config",
+	],
+)

@@ -1,0 +1,13 @@
+(
+	name: "wget",
+	version: "1.21.3",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/wget/wget-1.21.3.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [
+		"make-ca",
+	],
+	mkdeps: [],
+	extras: [],
+)

@@ -1,0 +1,11 @@
+(
+	name: "perl",
+	version: "5.36",
+	repo: "core",
+	source: "https://www.cpan.org/src/5.0/perl-5.36.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

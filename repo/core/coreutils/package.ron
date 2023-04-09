@@ -1,0 +1,13 @@
+(
+	name: "coreutils",
+	version: "9.1",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/coreutils/coreutils-9.1.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [
+		"https://www.linuxfromscratch.org/patches/lfs/11.2/coreutils-9.1-i18n-1.patch",
+	],
+)

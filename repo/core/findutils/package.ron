@@ -1,0 +1,11 @@
+(
+	name: "findutils",
+	version: "4.9.0",
+	repo: "core",
+	source: "https://ftp.gnu.org/gnu/findutils/findutils-4.9.0.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

@@ -1,5 +1,5 @@
 /*!
- * YPM, the Yocto Package Manager.
+ * YPM, the Yeti Package Manager.
 */
 
 use std::env;
@@ -23,9 +23,10 @@ fn main() {
                 'd' => ypm::download_all(&args[2..]),
                 'r' => ypm::remove_all(&args[2..]),
                 'c' => ypm::clear_cache(),
+                'v' => ypm::print_version(),
                 'o' => opts.set_offline(),
                 'e' => opts.exit_on_fail(),
-                _ => ypm::print_help(),
+                _ => (),
             }
         }
     } else if &args[1][0..2] == "--" {

@@ -1,0 +1,11 @@
+(
+	name: "zlib",
+	version: "1.2.13",
+	repo: "core",
+	source: "https://zlib.net/zlib-1.2.13.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

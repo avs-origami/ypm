@@ -1,0 +1,11 @@
+(
+	name: "kmod",
+	version: "30",
+	repo: "core",
+	source: "https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-30.tar.xz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

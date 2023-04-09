@@ -1,0 +1,11 @@
+(
+	name: "markupsafe",
+	version: "2.1.1",
+	repo: "core",
+	source: "https://files.pythonhosted.org/packages/source/M/MarkupSafe/MarkupSafe-2.1.1.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)

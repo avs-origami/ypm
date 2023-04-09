@@ -1,0 +1,11 @@
+(
+	name: "sudo",
+	version: "1.19.11p3",
+	repo: "core",
+	source: "https://www.sudo.ws/dist/sudo-1.9.11p3.tar.gz",
+	is_group: false,
+	no_source: false,
+	deps: [],
+	mkdeps: [],
+	extras: [],
+)
