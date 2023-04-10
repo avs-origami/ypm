@@ -2,7 +2,7 @@ use std::{env, fs, path::Path, process::{self, Command, ExitStatus}, os::unix::p
 
 mod user;
 
-const VERSION: &str = "v0.0.1";
+const VERSION: &str = "v0.0.2";
 
 const PKG_DIR: &str = "pkg";
 const DL_CACHE: &str = "cache";
