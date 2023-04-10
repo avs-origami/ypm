@@ -1,7 +1,7 @@
 
-+================================+
-| YPM: the Yocto Package Manager |
-+================================+
++===============================+
+| YPM: the Yeti Package Manager |
++===============================+
 
 Usage: ypm [OPTIONS] [ARGUMENTS]
   
@@ -14,5 +14,6 @@ Options:
   -i => Install a package
   -o => Set offline mode
   -r => Remove a package
+  -v => Get version information
 
 See man ypm(8) for more information.

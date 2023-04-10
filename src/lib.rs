@@ -80,7 +80,7 @@ pub fn generate_package(args: &Vec<String>) {
     if args.len() < 11 {
         eprintln!("Not enough arguments.");
         print_help();
-        process::exit(1);
+        process::exit(2);
     }
 
     let package = YpmPkg {
@@ -272,10 +272,11 @@ pub fn install_package(package: &YpmPkg) -> ExitStatus{
 
 /// Install all dependencies
 pub fn install_deps(package: &YpmPkg) -> ExitStatus {
-    download_all(&package.deps);
     for dependency in &package.deps {
         let dep = load_package(&dependency[..]);
         if ! dep.is_installed() {
+            download_package(&dep);
+            download_extras(&dep);
             let dep_status = install_deps(&dep);
             if ! dep_status.success() {
                 println!("\x1b[31mFailed to install dependencies of dependency\x1b[0m");

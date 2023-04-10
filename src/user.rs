@@ -51,7 +51,7 @@ pub fn confirm(packages: &[String]) {
     io::stdin().read_line(&mut input).unwrap();
 
     match input.to_lowercase().trim() {
-        "n" => process::exit(2),
+        "n" => process::exit(3),
         _ => (),
     }
 }
@@ -85,7 +85,7 @@ pub fn confirm_remove(packages: &[String]) {
     io::stdin().read_line(&mut input).unwrap();
 
     match input.to_lowercase().trim() {
-        "n" => process::exit(2),
+        "n" => process::exit(3),
         _ => (),
     }
 }

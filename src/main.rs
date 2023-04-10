@@ -11,7 +11,7 @@ fn main() {
     if args.len() < 2 {
         println!("No options specified.");
         ypm::print_help();
-        std::process::exit(1)
+        std::process::exit(2)
     }
 
     if args[1].chars().nth(0).unwrap() == '-' && args[1].chars().nth(1).unwrap() != '-' {

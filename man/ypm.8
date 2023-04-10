@@ -1,6 +1,6 @@
 .\" Manpage for ypm, the Yeti Package Manager.
 
-.TH man 8 "13 February 2023" "0.1.0" "YPM MANUAL"
+.TH man 8 "10 April 2023" "0.0.2-alpha" "YPM MANUAL"
 
 .SH NAME
 ypm \- Yeti package manager
@@ -27,6 +27,8 @@ ypm is a simple symlink-style package manager written in Rust. It features depen
 \-o \- Offline mode. This means ypm will not attempt to download any files from the internet, but it will still expect all the necessary files to be present in the cache directory. It’s not useful at the moment since the install command will not download files that already exist in the cache directory, and so it may be removed in future.
 
 \-r \- Remove a package.
+
+\-v \- Get version information.
 
 .SH EXAMPLES
 Installing Nano: ypm \-i nano
@@ -62,11 +64,11 @@ Setting $YPM_ROOT will change the directory where ypm will look for the cache, p
 Setting the $EDITOR variable will launch that program instead of vim when using the package generator. (e.g. export EDITOR=nvim to use neovim)
 
 .SH EXIT CODES
-1: Argument error
+1 / 101: Panic
 
-2: Operation cancelled
+2: Argument error
 
-101: Panic
+3: Operation cancelled
 
 .SH BUGS
 This program is still experimental, and so it is likely to have bugs. Bugs can be reported by opening an issue on the GitHub page (https://github.com/AVS-Origami/Yeti).

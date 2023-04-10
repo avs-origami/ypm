@@ -1,13 +1,12 @@
 (
 	name: "ypm",
-	version: "0.1.0",
+	version: "0.0.2-alpha",
 	repo: "core",
-	source: "https://github.com/AVS-Origami/yocto/blob/main/ypm/releases/ypm-0.1.0.tar.xz",
+	source: "https://github.com/AVS-Origami/ypm/archive/refs/tags/v0.0.2-alpha.tar.xz",
 	is_group: false,
 	no_source: false,
 	deps: [
 		"wget",
-		"findutils",
 	],
 	mkdeps: [
 		"rust",

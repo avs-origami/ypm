@@ -1,1 +1,42 @@
-The Yeti Package Manager
+|----------------------------|     ,_____,
+| Yeti Package Manager (YPM) |     | . . |
+|----------------------------|     | ._, |
+| A linux package manager    |     |-----|
+| written in Rust.           |    / ,   , \
+|----------------------------|    |_'   '_|
+=~=~=~=~=~=~=~=~=~=~=~=~=~=~=~     '--'--'
+
+The Yeti Package Manager (YPM) is a small symlink style package manager written
+in Rust. It features dependency support and a utility to easily generate your
+own packages.
+
+=== USAGE
+=========
+
+ypm [OPTIONS] [ARGUMENTS]
+  
+Options:
+  -c => Clear the package cache
+  -d => Download a package source
+  -e => Exit on fail
+  -g => Generate a package template
+  -h => Show this help
+  -i => Install a package
+  -o => Set offline mode
+  -r => Remove a package
+  -v => Get version information
+
+The man page has more information.
+
+=== INSTALLATION
+================
+
+1. Clone this repo and run `cargo build`
+2. Copy the `repo` directory to `/etc/ypm/repo`
+3. Create the directories `/etc/ypm/pkg` and `/etc/ypm/cache`
+4. Run ./target/debug/ypm -i ypm
+
+=== BUGS
+========
+
+YPM is still in progress and probably has bugs. You can report them under the issues tab.
